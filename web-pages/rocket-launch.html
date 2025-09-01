@@ -1,0 +1,112 @@
+<html lang="en-US">
+    <head> <meta charset="UTF-8">
+        <title>Pack 322 - Eureka, MO</title>
+        <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/RTTMsec/Img/main/Pack%20322_Logo.png">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" id="vega-wp=googlefont1-css" href="//fonts.googleapis.com/css?family=Lato%3A400%2C400i%2C700%2C700i%2C900%2C900i&subset=latin-ext&ver=6.8.2" type="text/css" media="all">
+        
+        <!-- jQuery (required for SmartMenus) -->
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+            <!-- SmartMenus CSS -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/SmartMenus/1.1.1/addons/bootstrap/jquery.smartmenus.bootstrap.min.css" rel="stylesheet">
+            <!-- SmartMenus JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/SmartMenus/1.1.1/jquery.smartmenus.min.js"></script>
+            <!-- Optionally, SmartMenus Bootstrap Addon (if using Bootstrap styles) -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/SmartMenus/1.1.1/addons/bootstrap/jquery.smartmenus.bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Header Placeholder -->
+        <div id="header-placeholder"></div>
+
+        <script>
+            fetch('../webpage-partials/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-placeholder').innerHTML = data;
+                    // Close banner button
+                    var closeBtn = document.getElementById('close-banner-btn');
+                    if (closeBtn) {
+                        closeBtn.onclick = function() {
+                            var banner = document.getElementById('announcement-banner');
+                            if (banner) banner.style.display = 'none';
+                        };
+                    }
+                    // Initialize SmartMenus after navbar is loaded
+                    $('#menu-main-menu').smartmenus();
+                    // Hamburger menu toggle
+                    var navbarToggle = document.getElementById('navbar-toggle');
+                    if (navbarToggle) {
+                        navbarToggle.onclick = function() {
+                            document.getElementById('navbar-links').classList.toggle('active');
+                        };
+                    }
+                    window.scrollTo(0, 0);
+                });
+        </script>
+
+        <!-- Image Banner - Rocket Launch-->
+        <div class="image-banner narrow-banner">
+            <div class="banner-text-overlay">
+                <h1>Rocket Launch</h1>
+                <hr style="width: 60px; border: 2px solid rgb(0, 63, 99); margin-top: 0.5em auto;">
+            </div>
+        </div>
+
+       <!-- Rocket Launch PDF Viewer -->
+       <!-- Will need to host the PDF on the web server once hosting is purchased. /web-pages/assets/Rocket Launch Graphic.pdf followed by embedding it as:
+        <div class="rocket-launch-pdf" style="margin: 2em auto; max-width: 900px;">
+            <iframe 
+                src="assets/Rocket%20Launch%20Graphic.pdf"
+                width="100%" 
+                height="600" 
+                style="border: none;"
+                title="Rocket Launch Graphic PDF">
+            </iframe>
+        </div>
+       -->
+        <div class="rocket-launch-pdf" style="margin: 2em auto; max-width: 900px;">
+            <p>
+                <a href="https://raw.githubusercontent.com/RTTMsec/Img/main/Rocket%20Launch%20Graphic.pdf" target="_blank" rel="noopener">
+                    View the Rocket Launch Graphic PDF
+                </a>
+            </p>
+        </div>
+        
+        <!-- Page Content -->
+        <div class="section frontpage-content bg-white" id="welcome">
+            <div class="container">
+                <p><b>Date:</b> Saturday, September 6th, 2025</p>
+                <p><b>Time:</b> 6:00PM to 8:00PM</p>
+                <p><b>Location:</b> Berry Park, 1000 Berry Rd, Eureka, MO 63025</p>
+                <!-- Google Map Embed -->
+                <div style="margin-top:1em;">
+                    <iframe
+                        src="https://www.google.com/maps?q=Berry+Park,+1000+Berry+Rd,+Eureka,+MO+63025&output=embed"
+                        width="100%"
+                        height="350"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Berry Park Map">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div style="height: 3em;"></div>
+
+            <!-- Footer Placeholder -->
+        <div id="footer-placeholder"></div>
+
+        <script>
+            // Fetch and insert the footer
+            fetch('webpage-partials/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                });
+        </script>
+
+    </body>
