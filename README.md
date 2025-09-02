@@ -7,11 +7,11 @@ This is the site that is going to be used to maintain information about Pack 322
 # Structure:
     Partials:
         Header - contains the default header page to be used on each subpage including announcement banner and navigation bar.
-        Footer - contains the default footer page to be used on each subpage including links to Calendar, Fundraising, and Contact Us.
-        <!-- Page to 
+        Footer - contains the default footer page to be used on each subpage including links to Calendar, Fundraising, and Contact Us. 
 
 # Roadmap
 Remaining items to build include:
+    - Socials Links (Facebook, IG, etc.)
     - Calendar:
         - Embedding the 2025-2026 Activity Calendar as a download
         - Updating the content and ensuring that the calendar is downloadable for users.
@@ -27,6 +27,8 @@ Remaining items to build include:
                     - pictures from the event
         - Parent Resources
             - Updates to all pages
+                - Uniform page that has examples of what the uniform should like like for each rank (if images are available to pilfer from the interwebs)
+                - Links page with links to the scout shop, GSLAC
         - Leader Resources 
             - Updates to all pages
         - Fundraising
@@ -34,3 +36,4 @@ Remaining items to build include:
             - Tracking against goals
         - About
             - Adding information about each of the dens and the den leaders.
+            - FAQ Page
