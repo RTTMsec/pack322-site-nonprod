@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Pack 322 - Eureka, MO</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/RTTMsec/Img/main/Pack%20322_Logo.png">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&subset=latin-ext&ver=6.8.2" type="text/css" media="all">
     <!-- SmartMenus CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SmartMenus/1.1.1/addons/bootstrap/jquery.smartmenus.bootstrap.min.css" rel="stylesheet">
@@ -19,7 +19,7 @@
     <div id="header-placeholder"></div>
 
     <script>
-        fetch('webpage-partials/header.html')
+        fetch('components/header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
@@ -79,7 +79,7 @@
 
     <script>
         // Fetch and insert the footer
-        fetch('webpage-partials/footer.html')
+        fetch('components/footer.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('footer-placeholder').innerHTML = data;

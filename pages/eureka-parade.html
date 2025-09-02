@@ -1,26 +1,26 @@
+<!DOCTYPE html>
 <html lang="en-US">
-    <head> <meta charset="UTF-8">
-        <title>Pack 322 - Eureka, MO</title>
-        <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/RTTMsec/Img/main/Pack%20322_Logo.png">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" id="vega-wp=googlefont1-css" href="//fonts.googleapis.com/css?family=Lato%3A400%2C400i%2C700%2C700i%2C900%2C900i&subset=latin-ext&ver=6.8.2" type="text/css" media="all">
-        
-        <!-- jQuery (required for SmartMenus) -->
-            <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-            <!-- SmartMenus CSS -->
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/SmartMenus/1.1.1/addons/bootstrap/jquery.smartmenus.bootstrap.min.css" rel="stylesheet">
-            <!-- SmartMenus JS -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/SmartMenus/1.1.1/jquery.smartmenus.min.js"></script>
-            <!-- Optionally, SmartMenus Bootstrap Addon (if using Bootstrap styles) -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/SmartMenus/1.1.1/addons/bootstrap/jquery.smartmenus.bootstrap.min.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Pack 322 - Eureka, MO</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/RTTMsec/Img/main/Pack%20322_Logo.png">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&subset=latin-ext&ver=6.8.2" type="text/css" media="all">
+    <!-- SmartMenus CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SmartMenus/1.1.1/addons/bootstrap/jquery.smartmenus.bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (required for SmartMenus) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- SmartMenus JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SmartMenus/1.1.1/jquery.smartmenus.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SmartMenus/1.1.1/addons/bootstrap/jquery.smartmenus.bootstrap.min.js"></script>
+</head>
 
     <body>
         <!-- Header Placeholder -->
         <div id="header-placeholder"></div>
 
         <script>
-            fetch('../webpage-partials/header.html')
+            fetch('../components/header.html')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('header-placeholder').innerHTML = data;
@@ -52,27 +52,7 @@
                 <hr style="width: 60px; border: 2px solid rgb(0, 63, 99); margin-top: 0.5em auto;">
             </div>
         </div>
-
-       <!-- Rocket Launch PDF Viewer -->
-       <!-- Will need to host the PDF on the web server once hosting is purchased. /web-pages/assets/Rocket Launch Graphic.pdf followed by embedding it as:
-        <div class="rocket-launch-pdf" style="margin: 2em auto; max-width: 900px;">
-            <iframe 
-                src="assets/Rocket%20Launch%20Graphic.pdf"
-                width="100%" 
-                height="600" 
-                style="border: none;"
-                title="Rocket Launch Graphic PDF">
-            </iframe>
-        </div>
-       -->
-        <div class="rocket-launch-pdf" style="margin: 2em auto; max-width: 900px;">
-            <p>
-                <a href="https://raw.githubusercontent.com/RTTMsec/Img/main/Rocket%20Launch%20Graphic.pdf" target="_blank" rel="noopener">
-                    View the Rocket Launch Graphic PDF
-                </a>
-            </p>
-        </div>
-        
+     
         <!-- Page Content -->
         <div class="section frontpage-content bg-white" id="welcome">
             <div class="container">
@@ -98,16 +78,17 @@
 
         <div style="height: 3em;"></div>
 
-            <!-- Footer Placeholder -->
+        <!-- Footer Placeholder -->
         <div id="footer-placeholder"></div>
 
+        <!-- Footer Nav -->
         <script>
-            // Fetch and insert the footer
-            fetch('webpage-partials/footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer-placeholder').innerHTML = data;
-                });
+        // Fetch and insert the footer
+        fetch('../components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
         </script>
 
     </body>
