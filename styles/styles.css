@@ -45,7 +45,7 @@ Front Page Banner Image Styles
     left: 50%;
     top: 10%;
     transform: translate(-50%, 0);
-    color: #fff;
+    color: #f0f0f0;
     text-align: center;
     text-shadow: 0 2px 8px rgba(0,0,0,0.7);
     z-index: 2;
@@ -71,8 +71,8 @@ Narrow Banner Image Styles
 
 .narrow-banner .banner-text-overlay,
 .image-banner.narrow-banner .banner-text-overlay {
-    color: #1a2636; /* Dark blue-gray for strong contrast against white and sky blue */
-    text-shadow: none;
+    color: #f0f0f0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
 }
 
 /* ==============
