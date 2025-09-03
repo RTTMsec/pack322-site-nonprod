@@ -58,7 +58,7 @@ Front Page Announcement Banner Style
     position: absolute;
     left: 50%;
     top: 10%;
-    transform: translate(-50%, -50);
+    transform: translate(-50%, -50%);
     color: #f0f0f0;
     text-align: center;
     text-shadow: 0 2px 8px rgba(0,0,0,0.7);
