@@ -41,7 +41,7 @@ Front Page Banner Image Styles
     background-size: cover;
     background-position: center 90%;
     width: 100%;
-    height: 550px;
+    height: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +50,7 @@ Front Page Banner Image Styles
 /* Make banner taller on large screens */
 @media (min-width: 1200px) {
     .image-banner.frontpage-banner.frontpage-banner-parallax-bg {
-        height: 1000px;
+        height: 1200px;
         background-position: center 80%; /* Adjust as needed for best crop */
     }
 }
