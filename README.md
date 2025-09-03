@@ -18,17 +18,19 @@ Remaining items to build include:
 
     - Subpages
         - Events
-            - Updates to Rocket Launch and Eureka Days Parade Pages
+            - Update broken activity calendar link.
+            - Update to Rocket Launch and Eureka Days Parade Pages
             - Build out of additional pages for:
                 - Scouting for Food
+                - Pack Campfire
                 - Blue & Gold
                 - Pinewood Derby - ideas include:
                     - detailed results from prior year
                     - pictures from the event
         - Parent Resources
             - Updates to all pages
-                - Uniform page that has examples of what the uniform should like like for each rank (if images are available to pilfer from the interwebs)
-                - Links page with links to the scout shop, GSLAC
+                - Useful Links Page - page with links to the scout shop, GSLAC
+                    - Add link to boyscouttrail.com (see https://www.pack330.com/websites)
         - Leader Resources 
             - Updates to all pages
         - Fundraising
