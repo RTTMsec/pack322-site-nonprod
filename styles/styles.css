@@ -3,6 +3,22 @@ html, body {
     padding: 0;
 }
 
+/* Make the body a flex container, column direction, full height */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Make the main content expand to fill available space */
+.main-content {
+    flex: 1;
+}
+
 /* ===============
 Front Page Announcement Banner Style
 ================== */
