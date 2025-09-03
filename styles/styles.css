@@ -46,7 +46,7 @@ Front Page Announcement Banner Style
 }
 
 /* Make banner taller on large screens */
-@media (min-width: 1200px) {
+@media (min-width: 2400px) {
     .image-banner.frontpage-banner.frontpage-banner-parallax-bg {
         height: 650px;
         background-position: center 80%; /* Adjust as needed for best crop */
