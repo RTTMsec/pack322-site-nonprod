@@ -85,10 +85,19 @@ Narrow Banner Image Styles
     justify-content: center;
 }
 
-.narrow-banner .banner-text-overlay,
+/* Align banner text overlay near the top for narrow banners */
 .image-banner.narrow-banner .banner-text-overlay {
+    position: absolute;
+    top: 16px; /* or use top: 5% for a percentage-based offset */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    padding: 1em;
     color: #f0f0f0;
     text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    box-sizing: border-box;
 }
 
 /* ==============jo
