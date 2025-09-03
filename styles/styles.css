@@ -50,7 +50,7 @@ Front Page Banner Image Styles
 /* Make banner taller on large screens */
 @media (min-width: 1200px) {
     .image-banner.frontpage-banner.frontpage-banner-parallax-bg {
-        height: 500px;
+        height: 1000px;
         background-position: center 80%; /* Adjust as needed for best crop */
     }
 }
