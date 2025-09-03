@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Pack 322 - Eureka, MO</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/RTTMsec/Img/main/Pack%20322_Logo.png">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&subset=latin-ext&ver=6.8.2" type="text/css" media="all">
+    <!-- SmartMenus CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SmartMenus/1.1.1/addons/bootstrap/jquery.smartmenus.bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (required for SmartMenus) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- SmartMenus JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SmartMenus/1.1.1/jquery.smartmenus.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SmartMenus/1.1.1/addons/bootstrap/jquery.smartmenus.bootstrap.min.js"></script>
+</head>
+
+<body>
+     <!-- Header Placeholder -->
+        <div id="header-placeholder"></div>
+
+        <script>
+            fetch('../components/header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-placeholder').innerHTML = data;
+                    // Close banner button
+                    var closeBtn = document.getElementById('close-banner-btn');
+                    if (closeBtn) {
+                        closeBtn.onclick = function() {
+                            var banner = document.getElementById('announcement-banner');
+                            if (banner) banner.style.display = 'none';
+                        };
+                    }
+                    // Initialize SmartMenus after navbar is loaded
+                    $('#menu-main-menu').smartmenus();
+                    // Hamburger menu toggle
+                    var navbarToggle = document.getElementById('navbar-toggle');
+                    if (navbarToggle) {
+                        navbarToggle.onclick = function() {
+                            document.getElementById('navbar-links').classList.toggle('active');
+                        };
+                    }
+                    window.scrollTo(0, 0);
+                });
+        </script>
+
+    <div class="uniform-info">
+        <h1>Cub Scout Uniform Requirements</h1>
+        <p>
+            Scouting America provides a listing of essential gear for Cub Scouts. 
+            <br>
+            <strong>Lions:</strong> Only a shirt and belt are required.
+            <br>
+            <strong>Tiger and Beyond:</strong> Cub Scouts should have a shirt, neckerchief, slide, and belt. Official pants, socks, and hat are optional, but encouraged.
+        </p>
+        <p>
+            For full details, visit the official Cub Scout Uniform Requirements page:<br>
+            <a href="https://www.scouting.org/programs/cub-scouts/cub-scout-uniform/" target="_blank" rel="noopener">
+                Cub Scout Uniform Requirements
+            </a>
+        </p>
+    </div>
+
+    <div class="scout-shop-info">
+        <h2>Recommended Scout Shop</h2>
+        <p>
+            <strong>Greater St. Louis Area Council Scout Shop</strong><br>
+            13347 Manchester Rd, Ste B<br>
+            Des Peres, Missouri 63131<br>
+            <strong>Hours:</strong><br>
+            Monday–Friday: 10:00 AM – 6:00 PM<br>
+            Saturday: 10:00 AM – 3:00 PM<br>
+            Sunday: Closed
+        </p>
+        <iframe
+            src="https://www.google.com/maps?q=13347+Manchester+Rd,+Ste+B,+Des+Peres,+Missouri+63131&output=embed"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <p>
+            <a href="https://www.scoutshop.org/storelocator?srsltid=AfmBOoqLx923lyJsLxtPvhrIFBUB1H76p3snpkiQIrNBAaiFZ5Kramse" target="_blank" rel="noopener">
+                Find other Scout Shops in your Area
+            </a>
+        </p>
+    </div>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Footer Nav -->
+    <script>
+    // Fetch and insert the footer
+    fetch('../components/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+    </script>
+
+</body>
+
+</html>
