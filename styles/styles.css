@@ -45,13 +45,13 @@ Front Page Announcement Banner Style
     justify-content: center;
 }
 
-/* Make banner taller on standard desktop screens */
+/* Make banner taller on standard desktop screens 
 @media (min-width: 1200px) {
     .image-banner.frontpage-banner.frontpage-banner-parallax-bg {
         height: 650px;
         background-position: center 80%;
     }
-}
+} */
 
 /* Responsive vertical position for banner text overlay */
 .banner-text-overlay {
