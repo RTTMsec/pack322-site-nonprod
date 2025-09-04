@@ -9,6 +9,10 @@ This is the site that is going to be used to maintain information about Pack 322
         Header - contains the default header page to be used on each subpage including announcement banner and navigation bar.
         Footer - contains the default footer page to be used on each subpage including links to Calendar, Fundraising, and Contact Us. 
 
+# Fixes to Make
+    - Front page banner on non-mobile devices, banner is narrow and the banner overlay text doesn't align.
+    - Rocket Launch banner doesn't appear on non-mobile devices.
+
 # Roadmap
 Remaining items to build include:
     - Socials Links (Facebook, IG, etc.)
