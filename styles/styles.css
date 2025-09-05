@@ -37,7 +37,7 @@ Front Page Announcement Banner Style
     position: relative;
     background-image: url('https://raw.githubusercontent.com/RTTMsec/Img/main/Isle%20of%20Skye.JPG');
     background-size: cover;
-    background-position: center 80%;
+    background-position: center 100%;
     width: 100%;
     height: 550px;
     display: flex;
@@ -46,7 +46,7 @@ Front Page Announcement Banner Style
 }
 
 /* Make banner taller on standard desktop screens */
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
     .image-banner.frontpage-banner.frontpage-banner-parallax-bg {
         height: 650px;
         background-position: center 80%;
