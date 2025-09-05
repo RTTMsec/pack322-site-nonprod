@@ -49,25 +49,28 @@ Front Page Announcement Banner Style
 /* Make banner taller on standard desktop screens */
 @media (min-width: 1200px) {
     .image-banner.frontpage-banner.frontpage-banner-parallax-bg {
-        height: 650px; /* Increase for large screens */
+        height: 420px; /* Increase for large screens */
         background-position: center 80%;
     }
 }
 
 /* Responsive vertical position for banner text overlay */
-.banner-text-overlay {
-    padding: 2em 1em;
-    text-align: center;
-    color: #fff;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+.image-banner.frontpage-banner.frontpage-banner-parallax-bg .banner-text-overlay {
+    position: absolute;
+    top: 15%; /* Moves text overlay toward the top */
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
     max-width: 900px;
-    margin: 0 auto;
+    text-align: center;
+    padding: 2em 1em;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 /* ==============
@@ -87,7 +90,7 @@ Narrow Banner Image Styles
 /* Make narrow banner taller on desktop screens */
 @media (min-width: 1200px) {
     .image-banner.narrow-banner {
-        height: 400px;
+        height: 250px;
         background-position: center 70%;
     }
 }
@@ -95,7 +98,7 @@ Narrow Banner Image Styles
 /* Align banner text overlay near the top for narrow banners */
 .image-banner.narrow-banner .banner-text-overlay {
     position: absolute;
-    top: 16px; /* or use top: 5% for a percentage-based offset */
+    top: 8%; /* Moves text overlay closer to top */
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -107,7 +110,7 @@ Narrow Banner Image Styles
     box-sizing: border-box;
 }
 
-/* ==============jo
+/* ==============
 Join Pack Button
 =============== */
 .join-pack-btn {
