@@ -74,7 +74,7 @@ Front Page Announcement Banner Style
     width: 100%;
     max-width: 900px;
     text-align: center;
-    padding: 2em 1em;
+    padding: 1em 1em;
     color: #fff;
     text-shadow: 0 2px 8px rgba(0,0,0,0.5);
     box-sizing: border-box;
@@ -115,7 +115,7 @@ Narrow Banner Image Styles
     width: 100%;
     max-width: 900px;
     text-align: center;
-    padding: 1em;
+    padding: 0em;
     color: #f0f0f0;
     text-shadow: 0 2px 8px rgba(0,0,0,0.7);
     box-sizing: border-box;
