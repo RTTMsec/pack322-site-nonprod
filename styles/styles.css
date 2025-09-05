@@ -42,7 +42,7 @@ Front Page Announcement Banner Style
     width: 100%;
     min-height: 240px;   /* Ensures reasonable height on mobile */
     height: 35vh;        /* Responsive height: 35% of viewport height */
-    max-height: 650px;   /* Prevents banner from being too tall on large screens */
+    max-height: 450px;   /* Prevents banner from being too tall on large screens */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,7 +53,7 @@ Front Page Announcement Banner Style
     .image-banner.frontpage-banner.frontpage-banner-parallax-bg {
         height: 45vh;    /* Slightly taller on desktop */
         min-height: 350px;
-        max-height: 650px;
+        max-height: 450px;
         background-position: center 80%;
     }
 }
@@ -61,7 +61,7 @@ Front Page Announcement Banner Style
 /* Responsive vertical position for banner text overlay */
 .image-banner.frontpage-banner.frontpage-banner-parallax-bg .banner-text-overlay {
     position: absolute;
-    top: 8%; /* Moves text overlay toward the top */
+    top: 5%; /* Moves text overlay toward the top */
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -102,7 +102,7 @@ Narrow Banner Image Styles
 /* Align banner text overlay near the top for narrow banners */
 .image-banner.narrow-banner .banner-text-overlay {
     position: absolute;
-    top: 8%; /* Moves text overlay closer to top */
+    top: 5%; /* Moves text overlay closer to top */
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
