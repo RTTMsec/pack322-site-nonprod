@@ -5,7 +5,8 @@ html, body {
 
 /* Make the body a flex container, column direction, full height */
 html, body {
-    height: 100%;
+    height: auto;
+    overflow: auto;
 }
 
 body {
