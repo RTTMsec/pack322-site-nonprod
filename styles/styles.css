@@ -1,6 +1,13 @@
+/* ===========================
+   Font Styles
+   ========================== */
+/* Montserrat from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 /* Make the body a flex container, column direction, full height */
@@ -383,11 +390,7 @@ Footer Styles
     transition: background 0.2s;
 }
 
-/* ===========================
-   Font Styles
-   ========================== */
-/* Montserrat from Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
 
 html, body {
     margin: 0;
