@@ -83,6 +83,14 @@ Narrow Banner Image Styles
     justify-content: center;
 }
 
+/* Make narrow banner taller on desktop screens */
+@media (min-width: 1200px) {
+    .image-banner.narrow-banner {
+        height: 400px;
+        background-position: center 70%;
+    }
+}
+
 /* Align banner text overlay near the top for narrow banners */
 .image-banner.narrow-banner .banner-text-overlay {
     position: absolute;
