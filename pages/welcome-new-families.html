@@ -93,9 +93,21 @@
                             <p>Our Pack meetings are held on the 2nd Thursday and Den meetings are held on the 4th Thursday of each month.</p>
 
                             <p> Additional details of events and activities will be communicated via email and our website. You can find the full calendar of events <a href="/pack322-site-nonprod/pages/calendar.html">here</a>.</p>
-                        </div
-                    </div>
+                        </div>
                 </div>
+            <!-- Footer Placeholder -->
+                <div id="footer-placeholder"></div>
 
+                <script>
+                    // Fetch and insert the footer
+                    fetch('components/footer.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('footer-placeholder').innerHTML = data;
+                        });
+                </script>
+            </div>
+        </div>
+    </div>
 </body> 
 </html>
