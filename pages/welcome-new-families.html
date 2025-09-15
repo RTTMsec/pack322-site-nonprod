@@ -6,44 +6,35 @@
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/RTTMsec/Img/main/Pack%20322_Logo.png">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&subset=latin-ext&ver=6.8.2" type="text/css" media="all">
-    <!-- jQuery (required for SmartMenus) -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- SmartMenus CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SmartMenus/1.1.1/addons/bootstrap/jquery.smartmenus.bootstrap.min.css" rel="stylesheet">
-    <!-- SmartMenus JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SmartMenus/1.1.1/jquery.smartmenus.min.js"></script>
-
 </head>
-
 <body>
-     <!-- Header Placeholder -->
-        <div id="header-placeholder"></div>
-
-        <script>
-            fetch('../components/header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header-placeholder').innerHTML = data;
-                    // Close banner button
-                    var closeBtn = document.getElementById('close-banner-btn');
-                    if (closeBtn) {
-                        closeBtn.onclick = function() {
-                            var banner = document.getElementById('announcement-banner');
-                            if (banner) banner.style.display = 'none';
-                        };
-                    }
-                    // Initialize SmartMenus after navbar is loaded
-                    $('#menu-main-menu').smartmenus();
-                    // Hamburger menu toggle
-                    var navbarToggle = document.getElementById('navbar-toggle');
-                    if (navbarToggle) {
-                        navbarToggle.onclick = function() {
-                            document.getElementById('navbar-links').classList.toggle('active');
-                        };
-                    }
-                    window.scrollTo(0, 0);
-                });
-        </script>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('../components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                var closeBtn = document.getElementById('close-banner-btn');
+                if (closeBtn) {
+                    closeBtn.onclick = function() {
+                        var banner = document.getElementById('announcement-banner');
+                        if (banner) banner.style.display = 'none';
+                    };
+                }
+                $('#menu-main-menu').smartmenus();
+                var navbarToggle = document.getElementById('navbar-toggle');
+                if (navbarToggle) {
+                    navbarToggle.onclick = function() {
+                        document.getElementById('navbar-links').classList.toggle('active');
+                    };
+                }
+                window.scrollTo(0, 0);
+            });
+    </script>
 
     <!-- Image Banner -->
     <div class="image-banner narrow-banner" style="position: relative;">
@@ -54,8 +45,7 @@
     </div>
 
     <!-- Page Content-->
-    <div class="main-content">
-
+    <div class="main-content" style="color: #000;">
         <div class="section frontpage-content bg-white" id="welcome">
             <div class="container" style="display: flex; gap: 2em; align-items: flex-start;">
                 <div style="flex: 1; max-width: 800px;">
@@ -65,51 +55,67 @@
                     <div style="margin-top:2em;">
                         <p><strong>Step 1: Registration</strong></p>
                         <div style="margin-left:2em;">
-                            <p> Register online through the my.scouting.org portal using the link below:</p>
+                            <p>Register online through the my.scouting.org portal using the link below:</p>
                             <a href="https://my.scouting.org/online-registration/50c5f65e-dd96-43b4-a8c6-3ab48ebdd95e/applicant-type" target="_blank" class="join-pack-btn">
-                            Join Pack 322 – Click here to Register Online!
+                                Join Pack 322 – Click here to Register Online!
                             </a>
                         </div>
 
-                        <p><strong><b>Step 2: Uniform & Supplies</strong></b></p>
-                       <div style="margin-left:2em;">
+                        <p><strong>Step 2: Uniform & Supplies</strong></p>
+                        <div style="margin-left:2em;">
                             <p>All new Scouts will need to purchase a uniform and some basic supplies. Here’s what you’ll need:</p>
-                            <ul style="margin-top:0.5em; margin-bottom:0.5em; color: #000;">
-                                <li>Official Cub Scout uniform: shirt, belt, and blue pants/shorts. For ranks other than lions, you will also need a neckerchief and slide.</li>
+                            <ul style="margin-top:0.5em; margin-bottom:0.5em;">
+                                <li>
+                                    Official Cub Scout Uniform (all ranks):
+                                    <ul style="list-style-type: disc; margin-left: 1.5em;">
+                                        <li>Shirt (t-shirt for Lions)</li>
+                                        <li>Belt</li>
+                                        <li>Blue Pants/Shorts (do not need to be official)</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    For ranks above Lion you will also need:
+                                    <ul style="list-style-type: disc; margin-left: 1.5em;">
+                                        <li>Neckerchief</li>
+                                        <li>Slide</li>
+                                    </ul>
+                                </li>
                                 <li>Handbook for your Scout's rank.</li>
-                            </ul>                    
-                            <p> For additional information on uniforms and supplies, please visit our <a href="/pack322-site-nonprod/pages/uniforms.html">Uniforms</a> page.</p>
+                            </ul>
+                            <p>For additional information on uniforms and supplies, please visit our <a href="/pack322-site-nonprod/pages/uniforms.html">Uniforms</a> page.</p>
                         </div>
-                        
+
                         <p><strong>Step 3: Pay Pack Dues</strong></p>
                         <div style="margin-left:2em;">
-                            <p>Pack dues help cover the costs of activities, supplies, and events throughout the year. The annual dues for Pack 322 are $88 per Scout. </p>
-
-                            <p> You can pay dues online through the following link:</p>
+                            <p>Pack dues help cover the costs of activities, supplies, and events throughout the year. The annual dues for Pack 322 are $88 per Scout.</p>
+                            <p>You can pay dues online through the following link:</p>
                             <a href="https://square.link/u/5RmlUpPe" target="_blank" class="join-pack-btn">
-                            Pay Pack Dues Online</a>
+                                Pay Pack Dues Online
+                            </a>
                         </div>
-                        
+
                         <p><strong>Step 4: Attend Meetings & Events</strong></p>
                         <div style="margin-left:2em;">
                             <p>Our Pack meetings are held on the 2nd Thursday and Den meetings are held on the 4th Thursday of each month.</p>
-
-                            <p> Additional details of events and activities will be communicated via email and our website. You can find the full calendar of events <a href="/pack322-site-nonprod/pages/calendar.html">here</a>.</p>
+                            <p>Additional details of events and activities will be communicated via email and our website. You can find the full calendar of events <a href="/pack322-site-nonprod/pages/calendar.html">here</a>.</p>
                         </div>
+                    </div>
                 </div>
-            <!-- Footer Placeholder -->
-                <div id="footer-placeholder"></div>
-
-                <script>
-                    // Fetch and insert the footer
-                    fetch('components/footer.html')
-                        .then(response => response.text())
-                        .then(data => {
-                            document.getElementById('footer-placeholder').innerHTML = data;
-                        });
-                </script>
             </div>
         </div>
     </div>
-</body> 
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('../components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <!-- Back to Top -->
+    <div id="back_to_top" class="show"></div>
+</body>
 </html>
