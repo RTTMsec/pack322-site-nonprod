@@ -55,18 +55,18 @@
 
 <!-- Page Content-->
 <div class="main-content" style="padding: 2em 0;">
-    <div class="fundraising-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 2em; max-width: 1600px; margin: 0 auto;">
+    <div class="fundraising-grid" style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 1em; max-width: 1600px; margin: 0 auto;">
         <!-- Left Spacer Column -->
         <div class="fundraising-spacer" style="grid-column: 1 / 2;"></div>
         <!-- Popcorn Thermometer Column -->
         <div class="fundraising-thermometer" style="grid-column: 2 / 3; display: flex; flex-direction: column; align-items: center; justify-content: flex-start;">
             <h3 style="color: #c97a2b; text-align: center; margin-bottom: 2.5em;">Popcorn Goal</h3>
-            <div id="popcorn-thermometer" style="position: relative; width: 60px; height: 220px; background: #eee; border-radius: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 0.5em;">
+            <div id="popcorn-thermometer" style="position: relative; width: 60px; height: 220px; background: #eee; border-radius: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 2.5em;">
                 <div id="popcorn-thermometer-fill" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 0; background: linear-gradient(to top, #c97a2b 80%, #ffe0b2 100%); border-radius: 30px;"></div>
                 <div style="position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); width: 60px; height: 60px; background: #c97a2b; border-radius: 50%; border: 4px solid #eee;"></div>
                 <span id="popcorn-thermometer-label" style="position: absolute; top: -28px; left: 50%; transform: translateX(-50%); font-weight: bold; color: #c97a2b; background: #fff; padding: 2px 8px; border-radius: 8px; font-size: 1em; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">0%</span>
             </div>
-            <div style="font-size: 1em; color: #c97a2b;">
+            <div style="font-size: 1em; color: #c97a2b; margin-bottom: 1.5em;">
                 <span id="popcorn-raised">$5083</span> raised of <span id="popcorn-goal">$5,000</span> goal
             </div>
         </div>
@@ -117,12 +117,12 @@
         <!-- Coffee Thermometer Column -->
         <div class="fundraising-thermometer" style="grid-column: 8 / 9; display: flex; flex-direction: column; align-items: center; justify-content: flex-start;">
             <h3 style="color: #6b4f1d; text-align: center; margin-bottom: 2.5em;">Coffee Goal</h3>
-            <div id="coffee-thermometer" style="position: relative; width: 60px; height: 220px; background: #eee; border-radius: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 0.5em;">
+            <div id="coffee-thermometer" style="position: relative; width: 60px; height: 220px; background: #eee; border-radius: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 2.5em;">
                 <div id="coffee-thermometer-fill" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 0; background: linear-gradient(to top, #6b4f1d 80%, #ffe0b2 100%); border-radius: 30px;"></div>
                 <div style="position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%); width: 60px; height: 60px; background: #6b4f1d; border-radius: 50%; border: 4px solid #eee;"></div>
                 <span id="coffee-thermometer-label" style="position: absolute; top: -28px; left: 50%; transform: translateX(-50%); font-weight: bold; color: #6b4f1d; background: #fff; padding: 2px 8px; border-radius: 8px; font-size: 1em; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">0%</span>
             </div>
-            <div style="font-size: 1em; color: #6b4f1d;">
+            <div style="font-size: 1em; color: #6b4f1d; margin-bottom: 1.5em;">
                 <span id="coffee-raised">$1200</span> raised of <span id="coffee-goal">$2,000</span> goal
             </div>
         </div>
@@ -133,17 +133,17 @@
     // Popcorn thermometer
     const popcornRaised = 5083;
     const popcornGoal = 5000;
-    const percent = Math.min(Math.round((popcornRaised / popcornGoal) * 100), 100);
-    document.getElementById('popcorn-thermometer-fill').style.height = percent + '%';
+    const percent = Math.round((popcornRaised / popcornGoal) * 100); // Allow >100%
+    document.getElementById('popcorn-thermometer-fill').style.height = (percent > 100 ? '100%' : percent + '%');
     document.getElementById('popcorn-thermometer-label').textContent = percent + '%';
     document.getElementById('popcorn-raised').textContent = '$' + popcornRaised.toLocaleString();
     document.getElementById('popcorn-goal').textContent = '$' + popcornGoal.toLocaleString();
 
     // Coffee thermometer
-    const coffeeRaised = 1200;
+    const coffeeRaised = 0;
     const coffeeGoal = 2000;
-    const coffeePercent = Math.min(Math.round((coffeeRaised / coffeeGoal) * 100), 100);
-    document.getElementById('coffee-thermometer-fill').style.height = coffeePercent + '%';
+    const coffeePercent = Math.round((coffeeRaised / coffeeGoal) * 100); // Allow >100%
+    document.getElementById('coffee-thermometer-fill').style.height = (coffeePercent > 100 ? '100%' : coffeePercent + '%');
     document.getElementById('coffee-thermometer-label').textContent = coffeePercent + '%';
     document.getElementById('coffee-raised').textContent = '$' + coffeeRaised.toLocaleString();
     document.getElementById('coffee-goal').textContent = '$' + coffeeGoal.toLocaleString();
