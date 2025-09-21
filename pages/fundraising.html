@@ -53,14 +53,64 @@
         </div>
     </div>
 
-    <!-- Page Content-->
-    <div class="main-content">
+<!-- Page Content-->
+<div class="main-content" style="padding: 2em 0;">
+    <div class="fundraising-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2em; max-width: 1400px; margin: 0 auto;">
+        <!-- Popcorn Section: Left Two Columns -->
+        <div class="fundraising-section" style="grid-column: 1 / 3; background: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); padding: 1.5em;">
+            <h2 style="color: #c97a2b; text-align: center;">Popcorn Sales</h2>
+            <!-- Fundraising Goal Graphic -->
+            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 1em;">
+                <img src="/pack322-site-nonprod/assets/popcorn-goal.png" alt="Popcorn Fundraising Goal" style="max-width: 220px; width: 100%; height: auto;">
+            </div>
+            <!-- Registration Instructions -->
+            <div>
+                <h3 style="color: #c97a2b;">How to Register for Popcorn Sales</h3>
+                <p>
+                    Register your Scout for popcorn sales by visiting the <a href="https://www.trails-end.com/registration" target="_blank" rel="noopener">Trails End Registration</a> page. 
+                    After registering, you’ll receive a seller ID and access to the online dashboard to track your sales and progress.
+                </p>
+                <ul>
+                    <li>Sign up online with your Scout’s information.</li>
+                    <li>Pick up sales materials at the next Pack meeting.</li>
+                    <li>Set your fundraising goal and start selling!</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Coffee Section: Right Two Columns -->
+        <div class="fundraising-section" style="grid-column: 3 / 5; background: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); padding: 1.5em;">
+            <h2 style="color: #6b4f1d; text-align: center;">Coffee Sales</h2>
+            <!-- Fundraising Goal Graphic -->
+            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 1em;">
+                <img src="/pack322-site-nonprod/assets/coffee-goal.png" alt="Coffee Fundraising Goal" style="max-width: 220px; width: 100%; height: auto;">
+            </div>
+            <!-- Registration Instructions -->
+            <div>
+                <h3 style="color: #6b4f1d;">How to Register for Coffee Sales</h3>
+                <p>
+                    Register your Scout for coffee sales by contacting our fundraising coordinator or visiting the <a href="https://www.coffeefundraiser.com/register" target="_blank" rel="noopener">Coffee Fundraiser Registration</a> page.
+                    You’ll receive sales materials and instructions for tracking your progress.
+                </p>
+                <ul>
+                    <li>Complete the online registration or sign up at a Pack meeting.</li>
+                    <li>Collect your coffee sales kit.</li>
+                    <li>Set your fundraising goal and start selling!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
-        <h1 style="text-align: center; margin-top: 24px; font-size: 2em; font-weight: bold; color: rgb(0, 63, 99);">
-            Coming Soon!
-        </h1>
-
-    v</div>
+     <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+    <script>
+        // Fetch and insert the footer
+        fetch('../components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
 
 </body> 
 </html>
